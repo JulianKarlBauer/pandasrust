@@ -9,7 +9,9 @@ fn count_5s_vec(values: Vec<i64>) -> Vec<usize> {
 }
 
 fn main() {
+    //
     println!("{}", count_5s(505));
+    //
     let data = vec![1, 2, 5, 505];
     println!("{:?}", count_5s_vec(data));
 }

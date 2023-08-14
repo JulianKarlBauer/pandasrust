@@ -20,4 +20,6 @@ print(series)
 
 my_series = pd.Series(np.random.randint(0, 999, size=10_000_000))
 
+# # To time the execution on the larger "my_series" data,
+# # start ipython-session and enter the following command:
 # %timeit my_series.counter.count_5s()

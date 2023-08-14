@@ -13,3 +13,5 @@ cargo run
 # Recommendations
 
 If you want to work on a bunch of strings, use pyarrow instead of numpy.array.
+
+Within arrow, we don't directly point to data, but to metadata which specifies chunks/locations where data lives.

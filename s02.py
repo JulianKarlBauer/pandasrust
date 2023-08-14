@@ -1,5 +1,6 @@
 # Check "Extending pandas" documentation
 import pandas as pd
+import numpy as np
 
 from s01 import count_5s
 
@@ -20,3 +21,7 @@ class CountersAccessor:
 series = pd.Series([1, 2, 5, 505])
 series = series.counter.count_5s()
 print(series)
+
+my_series = pd.Series(np.random.randint(0, 999, size=10_000_000))
+
+# %timeit my_series.counter.count_5s()

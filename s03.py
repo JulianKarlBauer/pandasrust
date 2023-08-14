@@ -27,7 +27,7 @@ my_series = pd.Series(np.random.randint(0, 999, size=10_000_000))
 
 def get_internal_structure(series):
     block_content = series._data.blocks[0].values
-    if isinstance(series.type, np.dtype):
+    if isinstance(series.dtype, np.dtype):
         return block_content
     else:
         raise Exception("Not implemented")

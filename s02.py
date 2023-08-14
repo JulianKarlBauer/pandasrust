@@ -4,10 +4,6 @@ import numpy as np
 
 from s01 import count_5s
 
-# def count_5s(number):
-#     string_repr = str(number)
-#     return string_repr.count("5")
-
 
 @pd.api.extensions.register_series_accessor("counter")
 class CountersAccessor:

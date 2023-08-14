@@ -23,5 +23,15 @@ my_series = pd.Series(np.random.randint(0, 999, size=10_000_000))
 # # To time the execution on the larger "my_series" data,
 # # start ipython-session and enter the following command:
 # %timeit my_series.counter.count_5s()
+
+
+def get_internal_structure(series):
+    block_content = series._data.blocks[0].values
+    if isinstance(series.type, np.dtype):
+        return block_content
+    else:
+        raise Exception("Not implemented")
+
+
 # np_internals = series._data
 # print()

@@ -9,3 +9,7 @@ cargo new counters
 cd counter
 cargo run
 ```
+
+# Recommendations
+
+If you want to work on a bunch of strings, use pyarrow instead of numpy.array.
